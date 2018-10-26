@@ -7,6 +7,17 @@ class Chick implements Animal
      	myType = type;
      	mySound = sound;
      }
+     public Chick(String type, String sound1, String sound2)
+     {
+          myType = type;
+          int j = (int)(Math.random()*2+1);
+          if(j == 1){
+               mySound = sound1;
+          }
+          else{
+               mySound = sound2; 
+          }
+     }
      public Chick()
      {
      	myType = "unknown";
